@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-image: url(1.jpg);">
+
+    <p style="text-align: center; ">
+    <fieldset style="text-align: center; width: 300px; margin-left: auto; margin-right: auto; background-color: bisque;" id="field">
+        <legend>Напиток</legend>
+        <input type="text" id="coctail" placeholder="Введите напиток" style="margin-bottom: 10px;"><br>
+        <input type="radio" name="alcoho" id="concat1" value="true" checked style="margin-bottom: 10px;">Алкогольный
+        <input type="radio" name="alcoho" id="concat2" value="false" style="margin-bottom: 10px;">Безалкогольный<br>
+        <input type="text" id="ingredient" placeholder="Ингридиент и его вес" style="margin-bottom: 10px;"><br>
+        Рецепт приготовления <br>
+        <textarea id="comment" cols="40" rows="3"></textarea>
+        <p style="text-align: center;">
+            <input onclick="addValue2()" id="elem" type="button" value="Ввод рецепта"
+                style="border-radius: 10px; background-color: rgb(196, 233, 166); font-size: 20px;"><br>
+            <input onclick="getValue2()" id="elem1" type="button" value="Рецепт напитка"
+                style="border-radius: 10px; background-color: rgb(185, 247, 134); font-size: 20px;"><br>
+            <input onclick="deleteValue2()" id="elem2" type="button" value="Удаление рецепта"
+                style="border-radius: 10px; background-color: rgb(127, 182, 82); font-size: 20px;"><br>
+            <input onclick="getKeys2()" id="elem3" type="button" value="Перечень всех коктейлей"
+                style="border-radius: 10px; background-color: rgb(135, 247, 44); font-size: 20px;">
+        </p>
+    </fieldset>
+    </p>
+    
+    <div id="result"  style="background-color: aquamarine; border: solid 2px black ; width: 50em; margin-left: auto; margin-right: auto; padding: 10px;"></div>
+
+
+    <script src="HashStorage.js">
+
+    </script>
+</body>
+
+</html>
